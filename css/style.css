@@ -81,7 +81,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:1rem 5%;
+    padding:0 2%;
     border-bottom: var(--border);
     position: fixed;
     top:0; left: 0; right: 0;
@@ -90,11 +90,12 @@ section{
 
 .header .logo img{
     height: 7rem;
-    margin-left: 1rem;
+    margin-left: 4rem;
 }
 
 .header .navbar a{
-    margin:0 4rem;
+    margin:0 3rem;
+    justify-content: right;
     font-size: 2rem;
     color:#fff;
 }
@@ -223,17 +224,21 @@ section{
 }
 
 .home .content h3{
-    font-size: 8rem;
+    font-size: 7rem;
     color:#fff;
     text-decoration:#010103;
 }
 
 .home .content p{
     font-size: 2rem;
-    font-weight: lighter;
+    font-weight: semibold;
     line-height: 1.8;
-    padding:1rem 0;
+    letter-spacing: 0.2rem;
+    padding:2rem 0;
     color:#eee;
+}
+.home .content .p1{
+    color: #f79d2e;
 }
 
 .about .row{
