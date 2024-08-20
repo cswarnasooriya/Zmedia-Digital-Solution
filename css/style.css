@@ -263,13 +263,13 @@ section{
 
 .about .row .content h3{
     font-size: 3rem;
-    color:#fff;
+    color:#f1a548;
 }
 
 .about .row .content p{
     font-size: 1.6rem;
-    color:#ccc;
-    padding:1rem 0;
+    color:#8ee9f5;
+    padding:1rem 2;
     line-height: 1.8;
 }
 
