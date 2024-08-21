@@ -287,16 +287,19 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+    
 }
 
 .menu .box-container .box{
     padding:03rem;
     text-align: center;
-    border:var(--border);    
+    border:var(--border);  
+    border-radius: 8px;  
 }
 
 .menu .box-container .box img{
     height: 16rem;
+    border-radius: 8px;
 }
 
 .menu .box-container .box h3{
@@ -304,6 +307,12 @@ section{
     font-size: 2rem;
     padding:1rem 0;
 }
+.menu .box-container .box h3:hover{
+    color: #ced2d3;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
 
 .menu .box-container .box .price{
     color: #eff4f4;
@@ -319,6 +328,8 @@ section{
 
 .menu .box-container .box:hover{
     background:#0c37e3;
+    scale: 1.04;
+
 }
 
 .menu .box-container .box:hover > *{
@@ -397,6 +408,7 @@ section{
     border:var(--border);
     text-align: center;
     padding:3rem 2rem;
+    border-radius: 8px;
 }
 
 .review .box-container .box p{
