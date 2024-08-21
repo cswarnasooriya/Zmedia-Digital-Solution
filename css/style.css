@@ -313,8 +313,8 @@ section{
 }
 
 .menu .box-container .box h3{
-    color: #df9019;
-    font-size: 2rem;
+    color: #f3f2f1;
+    font-size: 2.5rem;
     padding:1rem 0;
 }
 .menu .box-container .box h3:hover{
@@ -337,7 +337,7 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:#0c37e3;
+    background:#3b5fef;
     scale: 1.04;
 
 }
