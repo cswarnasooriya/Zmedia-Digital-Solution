@@ -290,23 +290,23 @@ section{
 }
 
 .menu .box-container .box{
-    padding:5rem;
+    padding:03rem;
     text-align: center;
     border:var(--border);    
 }
 
 .menu .box-container .box img{
-    height: 10rem;
+    height: 16rem;
 }
 
 .menu .box-container .box h3{
-    color: #fff;
+    color: #df9019;
     font-size: 2rem;
     padding:1rem 0;
 }
 
 .menu .box-container .box .price{
-    color: #fff;
+    color: #eff4f4;
     font-size: 2.5rem;
     padding:.5rem 0;
 }
@@ -318,11 +318,11 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:#fff;
+    background:#0c37e3;
 }
 
 .menu .box-container .box:hover > *{
-    color:var(--black);
+    color:var(--bg);
 }
 
 .products .box-container{
