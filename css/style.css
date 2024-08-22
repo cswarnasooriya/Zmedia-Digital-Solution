@@ -2,6 +2,7 @@
 
 :root{
     --main-color:#f79d2e;
+    --secondary-color:#f43e3e;
     --black:#242429;
     --bg:#010103;
     --border:.1rem solid rgba(255,255,255,.3);
@@ -71,9 +72,20 @@ section{
     border-radius: 1.2rem;
 }
 
+.btn-back{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--secondary-color);
+    cursor: pointer;
+    border-radius: 1.2rem;
+}
+
 .btn:hover{
     letter-spacing: .2rem;
-    background: #db9136;
+    background: #d7b285;
     color: black;
 }
 
@@ -297,6 +309,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+    cursor: pointer;
     
 }
 
@@ -305,6 +318,7 @@ section{
     text-align: center;
     border:var(--border);  
     border-radius: 8px;  
+    background: #6b717b;
 }
 .menu .box-container .box-1{
     padding:5rem;
@@ -326,7 +340,7 @@ section{
 
 .menu .box-container .box h3{
     color: #f3f2f1;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding:1rem 0;
 }
 .menu .box-container .box-1 h3{
