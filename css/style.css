@@ -306,16 +306,39 @@ section{
     border:var(--border);  
     border-radius: 8px;  
 }
-
+.menu .box-container .box-1{
+    padding:5rem;
+    text-align: center;
+    border:var(--border);  
+    border-radius: 10px;  
+    
+}
 .menu .box-container .box img{
     height: 16rem;
+  
     border-radius: 8px;
+}
+
+.menu .box-container .box-1 img{
+    opacity: 0.8;
+    border-radius: 25px;
 }
 
 .menu .box-container .box h3{
     color: #f3f2f1;
     font-size: 2.5rem;
     padding:1rem 0;
+}
+.menu .box-container .box-1 h3{
+    color: #f3f2f1;
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+.menu .box-container .box-1 p{
+    color: #f0e5b7;
+    font-size: 1.6rem;
+    padding:2rem 2rem;
+    text-align: justify;
 }
 .menu .box-container .box h3:hover{
     color: #ced2d3;
