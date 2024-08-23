@@ -444,11 +444,15 @@ section{
 
 .review{
     border-bottom:var(--border-1);
+   margin-top: 15px;
 }
 .review .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+    margin-top: 8px;
+    
+    
 }
 
 .review .box-container .box{
@@ -456,6 +460,13 @@ section{
     text-align: center;
     padding:3rem 2rem;
     border-radius: 8px;
+    background: #1f2121;
+    cursor: pointer;
+}
+
+.review .box-container .box:hover{
+    background: #3a3a3a;
+    scale: 1.02;
 }
 
 .review .box-container .box p{
