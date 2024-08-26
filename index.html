@@ -272,26 +272,82 @@
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4620.953260895033!2d79.84723217564674!3d6.912462193087039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2594248d28dab%3A0x8bc3ed31183b85e4!2s18%20St%20Michaels%20Rd%2C%20Colombo%2000300!5e1!3m2!1sen!2slk!4v1724137789978!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <form action="">
+        <form action="" class="contact_form">
             <h3>get in touch</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
-                <input type="text" placeholder="Enter Your Name">
+                <input class="name" type="text" placeholder="Enter Your Name">
             </div>
             <div class="inputBox">
                 <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="Enter Email">
+                <input class="email" type="email" placeholder="Enter Email">
             </div>
             <div class="inputBox">
                 <span class="fas fa-phone"></span>
-                <input type="number" placeholder="Enter Contact Number">
+                <input class="msg" type="number" placeholder="Enter Contact Number">
             </div>
-            <input type="submit" value="contact now" class="btn">
+            <input type="submit" value="send" class="btn">
         </form>
+
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
 
     </div>
 
 </section> 
+
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('.contact_form');
+
+        function sendMsg(e) {
+            e.preventDefault();
+
+            const name = document.querySelector('.name').value.trim(),
+                  email = document.querySelector('.email').value.trim(),
+                  msg  = document.querySelector('.msg').value.trim();
+
+            // Simple validation
+            if (!name || !email || !msg) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Function to send email
+            Email.send({
+                SecureToken : "86a00769-4714-4547-ab3e-c582294535cd",
+                To : 'warnasooriyacs1000@gmail.com',
+                From : email,
+                Subject : `New message from ${name}`,
+                Body : `Name: ${name} <br> Email: ${email} <br> Message: ${msg}`
+            }).then(
+                message => alert(message)
+            ).catch(
+                error => alert('Failed to send email. Please try again later.')
+            );
+        }
+
+        // Email validation function
+        function validateEmail(email) {
+            const re = /^(([^<>()\[\]\.,;:\s@"]+(\.[^<>()\[\]\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\.,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,})$/i;
+            return re.test(String(email).toLowerCase());
+        }
+
+        // Event listener
+        form.addEventListener('submit', sendMsg);
+    });
+</script>
+
+
+
 
 <!-- contact section ends -->
 
