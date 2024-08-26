@@ -335,10 +335,10 @@ section{
 }
 
 .menu .box-container .box-1 img{
-    opacity: 1.0;
-    border-radius: 20px;
-    width: 500px;
-    height: 300px;
+    
+    border-radius: 14px;
+    height: 30rem;
+    
   
 }
 
