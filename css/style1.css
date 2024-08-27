@@ -1,0 +1,54 @@
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+/* Navigation dots */
+.dots-container {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
