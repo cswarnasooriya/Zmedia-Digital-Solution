@@ -168,7 +168,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0 2%;
+    padding:0 1%;
     border-bottom: var(--border);
     position: fixed;
     top:0; left: 0; right: 0;
@@ -306,16 +306,17 @@ section{
     backdrop-filter: blur(400px);
     background-position: center;
     border-bottom:var(--border-1);
-    margin-top: 80px;
+   
 }
 
 
 .home .content{
-    max-width: 110rem;
+    max-width: 200rem;
+    
     outline: none;
     background-color: #010218;
     border-radius: 10px;
-    padding: 40px;
+    padding: 80px;
     
     
     
@@ -789,3 +790,142 @@ section{
 .fade-in-up:nth-child(2) { animation-delay: 0.4s; }
 .fade-in-up:nth-child(3) { animation-delay: 0.6s; }
 .fade-in-up:nth-child(4) { animation-delay: 1s; }
+
+
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    display: none;
+}
+
+
+.slide p {
+    
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    margin: 125px;
+    background: #303035;
+    padding: 30px;
+    text-align: justify;
+}
+
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fade {
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+/* Navigation dots */
+.dots-container {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
