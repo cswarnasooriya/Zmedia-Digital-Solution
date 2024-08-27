@@ -55,7 +55,7 @@
     height: 100%;
     width: 100%;
    background-color: #010218;;
-    border-left: 1px solid #f9f6f6;
+    border-left: 2px solid #f9f6f6;
    animation: typing 8s steps(21)infinite;
    
 
