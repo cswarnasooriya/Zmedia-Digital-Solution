@@ -78,7 +78,7 @@
     --main-color:#f79d2e;
     --secondary-color:#f43e3e;
     --black:#242429;
-    --bg:#010103;
+    --bg:#080808;
     --border:.1rem solid rgba(255,255,255,.3);
     --border-1:.3rem solid rgb(233, 222, 222);
 }
@@ -422,12 +422,27 @@ section{
 }
 
 .menu .box-container .box h3{
-    color: #f3f2f1;
+    color: #f1f3f1;
     font-size: 2rem;
     padding:1rem 0;
 }
+.menu .box-container .box p{
+    color: #e0b24f;
+    font-size: 1.2rem;
+    padding:1rem 0;
+    
+
+}
+
+.menu .box-container .box p:hover{
+    color: #fff;
+    font-size: 1.2rem;
+    padding:1rem 0;
+    
+
+}
 .menu .box-container .box-1 h3{
-    color: #f3f2f1;
+    color: #ac631b;
     font-size: 2.5rem;
     padding:1rem 0;
 }
@@ -463,7 +478,7 @@ section{
 }
 
 .menu .box-container .box:hover > *{
-    color:var(--bg);
+    color:white;
 }
 
 .products .box-container{
