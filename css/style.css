@@ -397,7 +397,7 @@ section{
     text-align: center;
     border:var(--border);  
     border-radius: 8px;  
-    background: #6b7589;
+    background: #2c2c2e;
 }
 .menu .box-container .box-1{
     padding:5rem;
@@ -414,10 +414,10 @@ section{
 }
 
 .menu .box-container .box-1 img{
-    opacity: 1.0;
-    border-radius: 20px;
-    width: 500px;
-    height: 300px;
+    
+    border-radius: 14px;
+    height: 30rem;
+    
   
 }
 
@@ -457,7 +457,7 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:#a7b3f6;
+    background:#4b47d9;
     scale: 1.04;
 
 }
