@@ -852,6 +852,7 @@ section{
 
 .slide {
     display: none;
+    
 }
 
 
@@ -861,9 +862,8 @@ section{
     color: white;
     font-size: 25px;
     margin: 125px;
-    background: #303035;
+    background:url(../images/background2.jpg) no-repeat;
     padding: 30px;
-    text-align: justify;
 }
 
 .fade {
@@ -883,12 +883,11 @@ section{
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
+    
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.slide {
-    display: none;
-}
+
 
 .slide img {
     width: 100%;
@@ -896,7 +895,7 @@ section{
 }
 
 .fade {
-    animation: fadeEffect 1s;
+    animation: fadeEffect 1.5s;
 }
 
 @keyframes fadeEffect {
