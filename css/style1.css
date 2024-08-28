@@ -2,7 +2,7 @@
 
 .slideshow-container {
     position: relative;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -19,7 +19,7 @@
 }
 
 .fade {
-    animation: fadeEffect 1.5s;
+    animation:  0.20s;
 }
 
 @keyframes fadeEffect {

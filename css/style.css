@@ -312,10 +312,10 @@ section{
 
 .home .content{
     max-width: 200rem;
-    
+    margin-bottom: 10px;
     outline: none;
     background-color: #010218;
-    border-radius: 10px;
+    border-radius: 18px;
     padding: 80px;
     
     
@@ -807,14 +807,18 @@ section{
 .fade-in-up:nth-child(4) { animation-delay: 1s; }
 
 
-
-
-
-
+.home-2 .content-1{
+    max-width: 300rem;
+    outline: none;
+    background-color: #212123;
+    border-radius: 10px;
+    padding: 80px;
+    background:url(../images/hero_img.jpg);
+ 
+}
 
 .slideshow-container {
-    background:url(../images/About_P.png) no-repeat;
-    max-width: 90%;
+    max-width: 10%;
     padding-top: 28px;
     margin: 5rem;
     overflow: hidden;
@@ -830,22 +834,28 @@ section{
 
 .slide p {
     
-    border-radius: 10px;
-    color: white;
-    font-size: 25px;
-    margin: 125px;
-    background: rgb(39, 38, 38);
+    border-radius: 4rem;
+    align-items: center;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 15px;
+    background: rgb(19, 26, 85);
+    border: 1px solid white;
     padding: 50px;
+    color: rgb(227, 169, 70);
+    font-weight: bolder;
     text-align: justify;
 }
 
 .fade {
-    animation: fadeEffect 1.5s;
+    animation: fadeEffect 6000;
+    
 }
 
 @keyframes fadeEffect {
-    from {opacity: 0;} 
+    from {opacity: 0.2;} 
     to {opacity: 1;}
+   
 }
 
 
@@ -855,7 +865,7 @@ section{
     max-width: 80%;
     margin: auto;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 22px;
     
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -880,7 +890,7 @@ section{
 .dots-container {
     text-align: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     position: absolute;
     bottom: 15px;
     width: 100%;
