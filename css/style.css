@@ -56,7 +56,7 @@
     width: 100%;
     background-color: #070a39;
     border-left: 2px solid #f9f6f6;
-   animation: typing 10s steps(100)infinite;
+   animation: typing 10s steps(300)infinite;
    
 
 }
@@ -848,7 +848,7 @@ section{
 }
 
 .fade {
-    animation: fadeEffect 6000;
+    animation: fadeEffect 12s;
     
 }
 
