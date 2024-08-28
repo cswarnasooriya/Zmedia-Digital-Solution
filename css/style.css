@@ -11,17 +11,17 @@
 .wrapper .static-txt {
     color: #fff;
     font-size:60px;
-    font-weight: 400;
+    font-weight: 800;
     height: 90px;
    
 }
 
 .wrapper .dynamic-txts{
-    margin-left: 15px;
-    line-height: 80px;
+    margin-left: 3px;
+    line-height: 70px;
     height: 90px;
     overflow: hidden;
-   background-color: #010218;;
+    background-color: #070a39;
     
 
 
@@ -31,10 +31,10 @@
     list-style: none;
     color: #f7f5f1;
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 500;
     top: 0;
     position: relative;
-    animation: slide 12s steps(2)
+    animation: slide 20s steps(1)
     infinite;
 
 }
@@ -54,9 +54,9 @@
     left: 0;
     height: 100%;
     width: 100%;
-   background-color: #010218;;
+    background-color: #070a39;
     border-left: 2px solid #f9f6f6;
-   animation: typing 8s steps(21)infinite;
+   animation: typing 10s steps(100)infinite;
    
 
 }
@@ -314,7 +314,7 @@ section{
     max-width: 200rem;
     margin-bottom: 10px;
     outline: none;
-    background-color: #010218;
+    background-color: #070a39;
     border-radius: 18px;
     padding: 80px;
     
